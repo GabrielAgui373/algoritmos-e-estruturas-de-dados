@@ -88,10 +88,10 @@ List* listSearch(List* l, int v){
 
 //function that prints the elements of the list 
 void listPrint(List* l){
-    List* p;
+    List* i;
 
-    for(p = l; p != NULL; p = p->next){
-        printf("Value: %d\n", p->value);
+    for(i = l; i != NULL; i = i->next){
+        printf("Value: %d\n", i->value);
     }
 }
 
