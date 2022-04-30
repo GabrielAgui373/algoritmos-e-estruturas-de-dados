@@ -12,6 +12,11 @@ List* listCreate() {
     return NULL;
 }
 
+//function that check if the list is empty
+int listCheckEmpty(List* l){
+    return (l == NULL);
+}
+
 //function that frees the list memory
 void listFree(List* l){
     List* p = l;
@@ -68,11 +73,6 @@ List* listRemove(List* l, int v){
     }
     free(p);
     return l;
-}
-
-//function that check if the list is empty
-int listCheckEmpty(List* l){
-    return (l == NULL);
 }
 
 //function that searches for an element in the list
