@@ -25,3 +25,7 @@ func StackPush(s *Stack, v float64) {
 
 	s.Top = list
 }
+
+func StackCheckEmpty(s *Stack) bool {
+	return (s.Top == nil)
+}
